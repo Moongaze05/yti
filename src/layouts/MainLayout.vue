@@ -42,7 +42,7 @@
           header
           class="text-grey-8"
         >
-          Панель
+          Панель навигации
         </q-item-label>
         <RLink
           v-for="link in links"

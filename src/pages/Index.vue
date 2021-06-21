@@ -1,5 +1,5 @@
 <template>
-    <div >
+<div>
     <q-carousel
       animated
       v-model="slide"
@@ -39,15 +39,37 @@
 
     </q-carousel>
 
+  <div>
+    <div class='text-h4'>Квесты, конкурсы, задания</div>
+    <div class='quests'>
+      <MainQuests
+      v-for="quest in quests"
+      :key="quest.title"
+      v-bind="quest" />
+    </div>
   </div>
+</div>
+
 </template>
 <style scoped>
+
+.quests {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  }
 
 .custom-caption {
   text-align: center;
   padding: 12px;
   color: white;
   background-color: rgba(0, 0, 0, .3);
+  }
+
+.text-h4 {
+padding:15px 10px 0px;
+text-align:center;
   }
 
 .carousel {
@@ -64,12 +86,34 @@
     }
   }
 </style>
+
 <script>
+import MainQuests from 'components/MainQuests.vue';
+
+const questsData = [{
+    naming:'Квест',
+    title:'Первый квест',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolor?',
+  },
+{
+    naming: 'Конкурс',
+    title:'Второй конкурс',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolor?',
+  },
+  {
+    naming: 'Задание',
+    title:'Третье задание',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolor?',
+  },
+];
+
 export default {
   name: 'PageIndex',
+  components: { MainQuests },
   data () {
     return {
-      slide: 1
+      slide: 1,
+      quests: questsData,
     }
   }
 }
