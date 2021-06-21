@@ -5,11 +5,7 @@
   </div>
 </template>
 <style scoped>
-.card {
 
-  height:100px;
-
-  }
 </style>
 <script>
 export default {
