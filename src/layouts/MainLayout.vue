@@ -67,7 +67,7 @@ const linksData = [
     title: 'Главная',
     caption: 'Новости и квесты',
     link: '/',
-    icon: 'school',
+    icon: 'home',
   },
   {
     title: 'Форум',
@@ -79,13 +79,13 @@ const linksData = [
     title: 'Рейтинг',
     caption: 'Рейтинговая таблица учащихся',
     link: 'rating',
-    icon: 'record_voice_over',
+    icon: 'trending_up',
   },
   {
     title: 'Материалы',
     caption: 'Полезные материалы для всех',
     link: 'materials',
-    icon: 'rss_feed',
+    icon: 'article',
   },
 ];
 
