@@ -25,7 +25,7 @@
       bordered
       content-class="bg-grey-1"
     >
-      <a href="profile">
+      <RouterLink to="profile">
         <q-img src="https://picwalls.ru/img/gallery/4/thumbs/thumb_l_29541pw.jpg" style="height: 150px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
@@ -35,17 +35,17 @@
             <div>Ваш профиль</div>
           </div>
         </q-img>
-      </a>
+      </RouterLink>
       <q-list>
         
         <q-item-label
           header
           class="text-grey-8"
         >
-          Essential Links
+          Панель
         </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
+        <RouterLink
+          v-for="link in links"
           :key="link.title"
           v-bind="link"
         />
@@ -59,42 +59,43 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+
+import RouterLink from 'components/RouterLink.vue'
 
 const linksData = [
   {
     title: 'Главная',
     caption: 'Новости и квесты',
+    link: '',
     icon: 'school',
-    link: ''
   },
   {
     title: 'Форум',
     caption: 'FAQ и общение',
+    link: 'forum',
     icon: 'chat',
-    link: 'forum'
   },
   {
     title: 'Рейтинг',
     caption: 'Рейтинговая таблица учащихся',
+    link: 'rating',
     icon: 'record_voice_over',
-    link: 'rating'
   },
   {
     title: 'Материалы',
     caption: 'Полезные материалы для всех',
+    link: 'materials',
     icon: 'rss_feed',
-    link: 'materials'
   },
 ];
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  components: { RouterLink },
   data () {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      links: linksData
     }
   }
 }
