@@ -25,7 +25,7 @@
       bordered
       content-class="bg-grey-1"
     >
-      <RouterLink to="profile">
+      <router-link to="profile">
         <q-img src="https://picwalls.ru/img/gallery/4/thumbs/thumb_l_29541pw.jpg" style="height: 150px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
@@ -35,16 +35,16 @@
             <div>Ваш профиль</div>
           </div>
         </q-img>
-      </RouterLink>
+      </router-link>
       <q-list>
-        
+
         <q-item-label
           header
           class="text-grey-8"
         >
           Панель
         </q-item-label>
-        <RouterLink
+        <RLink
           v-for="link in links"
           :key="link.title"
           v-bind="link"
@@ -60,7 +60,7 @@
 
 <script>
 
-import RouterLink from 'components/RouterLink.vue'
+import RLink from 'components/RLink.vue'
 
 const linksData = [
   {
@@ -91,7 +91,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { RouterLink },
+  components: { RLink },
   data () {
     return {
       leftDrawerOpen: false,
