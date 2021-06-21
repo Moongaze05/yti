@@ -66,7 +66,7 @@ const linksData = [
   {
     title: 'Главная',
     caption: 'Новости и квесты',
-    link: '',
+    link: '/',
     icon: 'school',
   },
   {

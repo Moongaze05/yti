@@ -1,5 +1,6 @@
 <template>
   <q-item
+    exact
     clickable
     tag="a"
     :to="link"
