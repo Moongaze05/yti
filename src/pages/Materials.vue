@@ -4,7 +4,7 @@
         Полезные материалы для школьников и их родителей
         </div>
         <div class='materials'>
-    <MaterialComp
+    <SharingMaterial
         v-for="material in materials"
           :key="material.title"
           v-bind="material" 
@@ -28,7 +28,7 @@
 </style>
 
 <script>
-import MaterialComp from 'components/MaterialComp.vue';
+import SharingMaterial from 'components/SharingMaterial.vue';
 
 const materialsData = [{
     title: 'Полезный материал',
@@ -54,7 +54,7 @@ const materialsData = [{
 
 export default {
   name: 'profile',
-  components: { MaterialComp },
+  components: { SharingMaterial },
   data() {
         return {
             materials: materialsData,

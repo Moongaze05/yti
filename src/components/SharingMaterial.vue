@@ -27,14 +27,13 @@
 @media (max-width: 764px) {
     .my-card-material {
         min-width:350px;
-        /* max-width:350px; */
     }
 }
 </style>
 
 <script>
 export default {
-  name: 'MaterialComp',
+  name: 'SharingMaterial',
   props: {
     title: {
       type: String,

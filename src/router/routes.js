@@ -16,7 +16,12 @@ const routes = [{
                 path: '/materials',
                 component: () =>
                     import ('pages/Materials.vue'),
-            }
+            },
+            {
+                path: '/rating',
+                component: () =>
+                    import ('pages/Rating.vue'),
+            },
         ]
     },
 
