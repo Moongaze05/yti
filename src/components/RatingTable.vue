@@ -4,8 +4,8 @@
             <q-table
                 title="Рейтинг"
                 dense
-                :data="rowsData"
-                :columns="columnsData"
+                :data="rows"
+                :columns="columns"
                 row-key="name">
             </q-table>
         </div>
@@ -20,14 +20,14 @@
 export default {
     name: 'RatingTable',
     props:{
-        rowsData: {
+        rows: {
             type: Array,
             required: true,
         },
-        columnsData: {
+        columns: {
             type: Array,
             required: true,
-        }
+        },
     },
 }
 </script>

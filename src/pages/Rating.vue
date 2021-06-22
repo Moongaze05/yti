@@ -1,7 +1,7 @@
 <template>
     <RatingTable
-    :columnsData="columns" 
-    :rowsData="rows"
+    :columns="columns"
+    :rows="rows" 
     />
 </template>
 
@@ -12,7 +12,7 @@
 <script>
 import RatingTable from 'components/RatingTable.vue';
 
-const columnsData = [
+const columns = [
   { name: 'name', align: 'center', label: 'ФИО', field: 'name', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
   { name: 'disctrict', label: 'Субъект РФ', field: 'district',sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
   { name: 'city', label: 'Город', field: 'city', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10)},
@@ -20,7 +20,7 @@ const columnsData = [
   { name: 'rating', label: 'Рейтинг', field: 'rating', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) }
 ]
 
-const rowsData = [
+const rows = [
   {
     name: 'Пупкин Василий Васильевич',
     district: 'Московская область',
@@ -50,8 +50,8 @@ export default {
   components: { RatingTable },
   data() {
     return {
-            rows: rowsData,
-            columns:columnsData,
+            rows: rows,
+            columns:columns,
         };
     },
 };
