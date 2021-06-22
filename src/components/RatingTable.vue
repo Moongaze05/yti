@@ -4,7 +4,7 @@
             <q-table
                 title="Рейтинг"
                 dense
-                :rows="rowsData"
+                :data="rowsData"
                 :columns="columnsData"
                 row-key="name">
             </q-table>
