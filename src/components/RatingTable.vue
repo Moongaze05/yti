@@ -2,18 +2,40 @@
     <div id="q-app" style="min-height: 100vh;">
         <div class="q-pa-md">
             <q-table
+            style="height: 75vh;"
                 title="Рейтинг"
                 dense
                 :data="rows"
                 :columns="columns"
-                row-key="name">
+                row-key="name"
+                sortBy="score"
+                descending
+                table-header-style="backgroundColor:lightBlue"
+                title-class="title"
+                >
             </q-table>
         </div>
     </div>
 </template>
 
-<style scoped>
+<style>
+.title {
+    color:white;
+}
 
+.q-table__top {
+    background-color: #1976D2
+}
+
+tbody>tr:nth-child(1) {
+    background-color:gold;
+}
+tbody>tr:nth-child(2) {
+    background-color:silver;
+}
+tbody>tr:nth-child(3) {
+    background-color:rgb(211, 143, 17);
+}
 </style>
 
 <script>

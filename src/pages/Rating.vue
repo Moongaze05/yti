@@ -1,11 +1,12 @@
 <template>
     <RatingTable
     :columns="columns"
-    :rows="rows" 
+    :rows="rows"
     />
 </template>
 
 <style scoped>
+
 
 </style>
 
@@ -13,12 +14,13 @@
 import RatingTable from 'components/RatingTable.vue';
 
 const columns = [
-  { name: 'name', align: 'center', label: 'ФИО', field: 'name', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'disctrict', label: 'Субъект РФ',align: 'center', field: 'district',sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'city', label: 'Город', field: 'city',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10)},
-  { name: 'school', label: 'Школа', field: 'school',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'rating', label: 'Рейтинг', field: 'rating',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) }
-]
+  { name: 'name', align: 'center', label: 'ФИО', field: 'name', sortable: true},
+  { name: 'disctrict', label: 'Субъект РФ', align: 'center', field: 'district',sortable: true},
+  { name: 'city', label: 'Город', field: 'city', align: 'center', sortable: true},
+  { name: 'school', label: 'Школа', field: 'school', align: 'center', sortable: true},
+  { name: 'rating', label: 'Рейтинг', field: 'score', sortOrder: 'da', align: 'center', sortable: true , 
+  sort:(a, b) => b - a},
+];
 
 const rows = [
   {
@@ -30,17 +32,31 @@ const rows = [
   },
   {
     name: 'Чечен Рамзан Ахматович',
-    district: 'Республика Чечня',
+    district: 'Чеченская республика',
     city: 'Грозный',
     school:'Школа Жизни',
-    score: 999,
+    score: 99,
   },
     {
-    name: 'Пупин Владислав',
+    name: 'Кратов Владислав',
     district: 'Русь-Матушка',
     school:'Питерская школа самбо',
     score: 1,
   },
+    {
+    name: 'Челов Чел Челович',
+    district: 'Республика Карелия',
+    city: 'Петрозаводск',
+    school:'ШУЕ ППШ',
+    score: 32,
+    },
+    {
+    name: 'Ауф Фаина 228',
+    district: 'Республика Дагестан',
+    city: 'Махачкала',
+    school:'Борцовая',
+    score: 55,
+    },
 ];
 
 
