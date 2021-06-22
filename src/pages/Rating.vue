@@ -14,10 +14,10 @@ import RatingTable from 'components/RatingTable.vue';
 
 const columns = [
   { name: 'name', align: 'center', label: 'ФИО', field: 'name', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'disctrict', label: 'Субъект РФ', field: 'district',sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'city', label: 'Город', field: 'city', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10)},
-  { name: 'school', label: 'Школа', field: 'school', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
-  { name: 'rating', label: 'Рейтинг', field: 'rating', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) }
+  { name: 'disctrict', label: 'Субъект РФ',align: 'center', field: 'district',sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
+  { name: 'city', label: 'Город', field: 'city',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10)},
+  { name: 'school', label: 'Школа', field: 'school',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
+  { name: 'rating', label: 'Рейтинг', field: 'rating',align: 'center', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) }
 ]
 
 const rows = [
