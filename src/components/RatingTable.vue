@@ -8,7 +8,8 @@
                 :data="rows"
                 :columns="columns"
                 row-key="name"
-                sortBy="score"
+                binary-state-sort
+                sortBy='score'
                 descending
                 table-header-style="backgroundColor:lightBlue"
                 title-class="title"

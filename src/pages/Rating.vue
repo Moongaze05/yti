@@ -18,7 +18,7 @@ const columns = [
   { name: 'disctrict', label: 'Субъект РФ', align: 'center', field: 'district',sortable: true},
   { name: 'city', label: 'Город', field: 'city', align: 'center', sortable: true},
   { name: 'school', label: 'Школа', field: 'school', align: 'center', sortable: true},
-  { name: 'rating', label: 'Рейтинг', field: 'score', sortOrder: 'da', align: 'center', sortable: true , 
+  { name: 'rating', label: 'Баллы', field: 'score', sortOrder: 'da', align: 'center', sortable: true , 
   sort:(a, b) => b - a},
 ];
 
@@ -70,6 +70,7 @@ export default {
             columns:columns,
         };
     },
+    
 };
 
 
