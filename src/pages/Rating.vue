@@ -18,7 +18,7 @@ const columns = [
   { name: 'disctrict', label: 'Субъект РФ', align: 'center', field: 'district',sortable: true},
   { name: 'city', label: 'Город', field: 'city', align: 'center', sortable: true},
   { name: 'school', label: 'Школа', field: 'school', align: 'center', sortable: true},
-  { name: 'score', label: 'Баллы', field: 'score', sortOrder: 'da', align: 'center', sortable: true , 
+  { name: 'score', label: 'Баллы', field: 'score', align: 'center', sort:true, sortable: true , 
   sort:(a, b) => b - a},
 ];
 
@@ -38,7 +38,7 @@ const rows = [
     score: 99,
   },
     {
-    name: 'Кратов Владислав',
+    name: 'Пупкин Василий Васильевич',
     district: 'Русь-Матушка',
     school:'Питерская школа самбо',
     score: 1,
@@ -56,7 +56,61 @@ const rows = [
     city: 'Махачкала',
     school:'Борцовая',
     score: 55,
-    },
+    },{
+    name: 'фупфцурЦ',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 16,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 13,
+  },{
+    name: 'прокорз',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 22,
+  },{
+    name: 'фххцвххцфаю',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 33,
+  },{
+    name: 'кхзпукрлзук',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 35,
+  },{
+    name: 'фжцвьжфцд',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 55,
+  },{
+    name: 'фвцждь фцжвдфж',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 23,
+  },{
+    name: 'оттищытищы',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 77,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 11,
+  },
 ];
 
 
