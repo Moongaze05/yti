@@ -7,7 +7,7 @@
                 dense
                 :data="rows"
                 :columns="columns"
-                row-key="name"
+                row-key="id"
                 binary-state-sort
                 sortBy='score'
                 descending
