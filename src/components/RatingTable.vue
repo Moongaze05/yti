@@ -9,10 +9,11 @@
                 :columns="columns"
                 row-key="id"
                 binary-state-sort
-                sortBy='score'
                 descending
                 table-header-style="backgroundColor:lightBlue"
                 title-class="title"
+                :rows-per-page-options="[]"
+                :pagination="pagination"
                 >
             </q-table>
         </div>
@@ -50,6 +51,9 @@ export default {
         columns: {
             type: Array,
             required: true,
+        },
+        pagination: {
+            type: Object,
         },
     },
 }

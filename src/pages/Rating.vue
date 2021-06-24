@@ -2,6 +2,8 @@
     <RatingTable
     :columns="columns"
     :rows="rows"
+    :data="$data"
+    :pagination="pagination"
     />
 </template>
 
@@ -110,6 +112,30 @@ const rows = [
     city: 'Москва',
     school:'СОШ №1337',
     score: 11,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 11,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 11,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 11,
+  },{
+    name: 'Пупкин Василий Васильевич',
+    district: 'Московская область',
+    city: 'Москва',
+    school:'СОШ №1337',
+    score: 11,
   },
 ];
 
@@ -118,12 +144,18 @@ const rows = [
 export default {
   name: 'Rating',
   components: { RatingTable },
+  
   data() {
     return {
             rows: rows,
             columns:columns,
-        };
-    },
+            pagination: {
+              sortBy: 'score',
+              descending: false,
+              rowsPerPage: 0,
+            },
+      };
+  },
 
 };
 
