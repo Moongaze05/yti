@@ -10,7 +10,7 @@
                 row-key="id"
                 binary-state-sort
                 descending
-                table-header-style="backgroundColor:lightBlue"
+                table-header-style="backgroundColor:#40DBFF"
                 title-class="title"
                 :rows-per-page-options="[]"
                 :pagination="pagination"
@@ -30,13 +30,13 @@
 }
 
 tbody>tr:nth-child(1) {
-    background-color:gold;
+    background-color:rgb(255, 230, 0);
 }
 tbody>tr:nth-child(2) {
-    background-color:silver;
+    background-color:rgb(184, 184, 184);
 }
 tbody>tr:nth-child(3) {
-    background-color:rgb(211, 143, 17);
+    background-color:#d77f15;
 }
 </style>
 
