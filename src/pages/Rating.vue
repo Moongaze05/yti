@@ -7,8 +7,13 @@
     />
 </template>
 
-<style scoped>
+<style>
 
+@media (max-width: 500px) {
+  .toggle {
+    display: none;
+  }
+}
 
 </style>
 
@@ -16,11 +21,11 @@
 import RatingTable from 'components/RatingTable.vue';
 
 const columns = [
-  { id: 'f1019a8d-43d3-4863-80e5-63fe78973854', name: 'name', align: 'center', label: 'ФИО', field: 'name', sortable: true},
-  { id: '83c787bf-6886-4ce9-a181-d24b3f8a4523', name: 'disctrict', label: 'Субъект РФ', align: 'center', field: 'district',sortable: true},
-  { id: '6b5bf0ca-7b7a-4cf9-a347-0933530634cb', name: 'city', label: 'Город', field: 'city', align: 'center', sortable: true},
-  { id: '36543e61-8b9b-42ce-a59a-a2fd5bacdf7d', name: 'school', label: 'Школа', field: 'school', align: 'center', sortable: true},
-  { id: 'acfe075e-c268-4dc7-a97e-266fe949f9a1', name: 'score', label: 'Баллы', field: 'score', align: 'center', sortable: true ,
+  { id: 'f1019a8d-43d3-4863-80e5-63fe78973854', name: 'name', align: 'left', label: 'ФИО', field: 'name', sortable: true},
+  { id: '83c787bf-6886-4ce9-a181-d24b3f8a4523', name: 'disctrict', label: 'Субъект РФ', align: 'left', field: 'district',sortable: true, headerClasses: 'toggle', classes: 'toggle'},
+  { id: '6b5bf0ca-7b7a-4cf9-a347-0933530634cb', name: 'city', label: 'Город', field: 'city', align: 'left', sortable: true, headerClasses: 'toggle', classes: 'toggle'},
+  { id: '36543e61-8b9b-42ce-a59a-a2fd5bacdf7d', name: 'school', label: 'Школа', field: 'school', align: 'left', sortable: true, headerClasses: 'toggle', classes: 'toggle'},
+  { id: 'acfe075e-c268-4dc7-a97e-266fe949f9a1', name: 'score', label: 'Баллы', field: 'score', align: 'right', sortable: true ,
   sort:(a, b) => b - a},
 ];
 

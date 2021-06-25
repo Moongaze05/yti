@@ -12,6 +12,7 @@
                 descending
                 table-header-style="backgroundColor:#40DBFF"
                 title-class="title"
+                tabindex=""
                 :rows-per-page-options="[]"
                 :pagination="pagination"
                 >
@@ -26,8 +27,15 @@
 }
 
 .q-table__top {
-    background-color: #1976D2
+    background-color: #1976D2;
+    
 }
+
+thead>tr>th {
+font-weight:700 !important;
+}
+
+/* классы на беке */
 
 tbody>tr:nth-child(1) {
     background-color:rgb(255, 230, 0);
