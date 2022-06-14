@@ -26,7 +26,7 @@
       content-class="bg-grey-1"
     >
       <router-link to="profile">
-        <q-img src="https://picwalls.ru/img/gallery/4/thumbs/thumb_l_29541pw.jpg" style="height: 150px">
+        <q-img src="https://placepic.ru/wp-content/uploads/2021/01/FF3mH8WjNnC2WlfFnSX34PFQycxOoEx0ViBmDS867A1Qs4DKSXt3TF2MYn0vLX7GiqgYZDBv9IU7JAx6FA3wqAAb7QWJ9yUh8QwVhux99aPsSJ7HTqAEaFt0IRIuOqsSG7CN9hQ.jpg" style="height: 150px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
               <img src="https://www.pngkit.com/png/detail/300-3004396_person-1824147-640-icon-user.png">

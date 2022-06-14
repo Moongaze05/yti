@@ -6,8 +6,8 @@
         <div class='materials'>
     <SharingMaterial
         v-for="material in materials"
-          :key="material.title"
-          v-bind="material" 
+          :key="material.id"
+          v-bind="material"
     />
     </div>
   </div>
@@ -31,21 +31,25 @@
 import SharingMaterial from 'components/SharingMaterial.vue';
 
 const materialsData = [{
+    id: 1,
     title: 'Полезный материал',
     description: 'Прочитайте пожалуйста наш полезный материал',
     link:'#',
 },
 {
+    id: 2,
     title: 'Полезный материал',
     description: 'Прочитайте пожалуйста наш полезный материал',
     link:'#',
 },
 {
+    id: 3,
     title: 'Полезный материал',
     description: 'Прочитайте пожалуйста наш полезный материал',
     link:'#',
 },
 {
+    id: 4,
     title: 'Полезный материал',
     description: 'Прочитайте пожалуйста наш полезный материал',
     link:'#',
